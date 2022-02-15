@@ -10,6 +10,14 @@
   --secondary-bgc-light: #f5f4fa;
   --accent-color: #2196f3;
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 .page {
   color: var(--primary-text-color-dark);
   background-color: var(--primary-text-color-light);
@@ -293,7 +301,9 @@ button {
 }
 .preview-desc {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 .preview-title {
   margin-bottom: 4px;
